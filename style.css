@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/hidden_leaf.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(60, 100%, 50%, 0.842);
+    margin: 6%;
+    padding:10%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+input{
+    padding: 5px;
+}
+
+#naruto{
+    background-image: url("images/naruto-index.jpg");
+  background-position: -33rem top;
+  background-repeat: no-repeat;
+}
+
+#sasuke{
+    background-image: url("images/sasuke-index.jpeg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#start-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-game{
+    padding: 14px 38px;
+  background-color: greenyellow;
+  cursor: pointer;
+  border: none;
+  border-radius: 10%;
+  display: block;
+
+}
+
+#start-game:hover{
+    background-color: green;
+    color: white;
+}
+

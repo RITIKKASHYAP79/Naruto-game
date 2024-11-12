@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle</title>
+    <link rel="shortcut icon" href="images/reningan.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="battle.css">
+</head>
+<body>
+    <!-- background music -->
+    <audio controls id="background-audio" style="display:none">
+        <source src="sound/background.mp3" type="audio/mpeg">
+      </audio>
+
+
+    <section id="main">
+
+        <!-- naruto container -->
+        <section id="container-1">
+            <video id="fire_expo_n">
+                <source src="images/fire_expo.mp4" type="video/mp4">
+            </video>
+            <div id="image-naruto">
+                
+                <img src="images/naruto.gif" alt="player image">
+            </div>
+            <div class="text">
+                <h1 id="player1Name" class="edit-text">Naruto</h1>
+                <h1 class="edit-text">HP: </h1>
+                <h1 id="player1Hp">1</h1>
+                <!-- <button class="attack" onclick="p1attack()" id="player1Attack">Attcak</button> -->
+                <button class="attack" id="player1Attack">Attcak</button>
+                
+            </div>
+
+            <div id="rasengan-box">
+                <img id="rasengan-attack" src="images/rasengan.gif" alt="rasengan">
+            </div>
+
+            <audio id="rasengan-audio" controls style="display:none">
+                <source  src="sound/rasengan.mp3" type="audio/mpeg">
+            </audio>
+
+
+            
+            
+        </section>
+
+        <!-- sasuke container -->
+        <section id="container-2">
+            <video id="fire_expo_s">
+                <source src="images/fire_expo.mp4" type="video/mp4">
+            </video>
+            <div id="sasuke-image">
+                
+                <img src="images/sasuke.png" alt="player image">
+            </div>
+
+            <div class="text">
+                <h1 id="player2Name" class="edit-text">Sasuke</h1>
+                <h1 class="edit-text">HP: </h1>
+                <h1 id="player2Hp">1</h1>
+                <!-- <button class="attack" onclick="p2attack()" id="player2Attack">Attcak</button> -->
+                <button class="attack" id="player2Attack">Attcak</button>
+
+            </div>
+
+            <div id="fireball-box">
+                <img id="fireball-attack" src="images/fireball.gif" alt="rasengan">
+            </div>
+
+            <audio controls id="fireball-audio" style="display:none">
+                <source  src="sound/fireball.mp3" type="audio/mpeg">
+            </audio>
+
+        </section>
+
+    </section>
+
+
+    <script src="battle.js"></script>
+
+</body>
+</html>

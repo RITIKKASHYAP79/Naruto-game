@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/sharingan.png" type="image/x-icon">
+    <title>game</title>
+</head>
+<body>
+    <!-- <audio controls autoplay style="display: none;">
+        <source src="sound/index-back.mp3"></source>
+    </audio> -->
+    <section id="container">
+        <form action="" method="post" id="naruto" class="form">
+            <h1>player 1 </h1>
+            Name : <input type="text" id ="player1name"placeholder="Enter Name">
+            DOB  : <input type="date" placeholder="Enter DOB">
+            <div class="button">
+                <!-- <input type="submit" class="btn"> -->
+                
+                <input type="reset" class="btn">
+            </div>
+        </form>
+
+        <form action="hel.php" method="post" id="sasuke" class="form">
+            <h1>player 2 </h1>
+            Name : <input type="text" id="player2name" placeholder="Enter Name">
+            DOB  : <input type="date" placeholder="Enter DOB">
+            <div class="button">
+                <!-- <input type="submit" class="btn"> -->
+                
+                <input type="reset" class="btn">
+            </div>
+        </form>
+        
+    </section>
+
+    <div id="start-button-container">
+        <button type="submit" onclick="start()" id="start-game">Start</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="name.js"></script>
+
+    
+</body>
+</html>

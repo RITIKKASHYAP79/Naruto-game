@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+
+}
+
+body{
+    color: white;
+    background-image:url("images/Final_Valley.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#main{
+    display: grid;
+    height: 100vh;
+    align-items: end;
+    grid-template-columns: auto auto auto;
+    gap: 50%;
+
+
+}
+
+#container-1{
+    /* margin-right: 12rem; */
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    flex-direction: column;
+}
+
+#container-2{
+    width: 19rem;
+    display: flex;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    margin: 2px 5px;
+}
+
+.edit-text{
+    padding: 2px 5px;
+}
+
+.attack{
+    margin: 0 10px ;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.attack:hover{
+    background-color: green;
+}
+
+#player1Attack{
+    /* display: block; */
+    display: none;
+}
+#player2Attack{
+    /* display: block; */
+    display: none;
+}
+
+#rasengan-box{
+    /* border: 2px solid black;
+  background-color: blue; */
+  display: block;
+  position: absolute;
+  top: 21rem;
+  left: 15rem;
+  width: 69rem;
+  rotate: 9deg;
+  
+
+}
+
+
+#rasengan-attack{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    /* animation: moveRasengan 2s linear 1 alternate; */
+    animation: none;
+}
+
+@keyframes moveRasengan {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(65rem); /* End position */
+    }
+}
+
+
+
+#fireball-box{
+    /* border: 2px solid black;
+  background-color: blue; */
+  display: block;
+  position: absolute;
+  top: 20rem;
+  right: 14rem;
+  width: 65rem;
+  rotate: 180deg;
+  
+
+}
+
+
+#fireball-attack{
+    height: 7rem;
+    width: 18rem;
+    
+    position: relative;
+    /* animation: moveRasengan 2s linear infinite alternate;  */
+    animation: none;
+    
+}
+
+@keyframes moveRasengan {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(55rem); /* End position */
+    }
+}
+
+
+#fire_expo_n{
+    z-index: 1;
+    position:absolute;
+    object-fit: cover;
+    display: none;
+    border-radius: 40%;
+}
+#fire_expo_s{
+    z-index: 1;
+    position:absolute;
+    object-fit: cover;
+    display: none;
+    border-radius: 40%;
+}
